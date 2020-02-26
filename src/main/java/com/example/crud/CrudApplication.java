@@ -10,10 +10,5 @@ public class CrudApplication {
 		SpringApplication.run(CrudApplication.class, args);
 	}
 
-//	@GetMapping("/hello")
-//	public String hello() {
-//		return "hello world";
-//	}
-
 }
 

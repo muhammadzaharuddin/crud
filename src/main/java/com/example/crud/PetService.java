@@ -14,7 +14,7 @@ public class PetService {
 
     public Pet getPet(Integer petId) {
         for (Pet pet : PetList){
-            if (pet.getid().equals(petId)) {
+            if (pet.getId().equals(petId)) {
                 return pet;
             }
         }
@@ -28,7 +28,7 @@ public class PetService {
     public void updatePet(Integer petId, Pet newPet) {
         int count = 0;
         for (Pet pet : PetList){
-            if (pet.getid().equals(petId)) {
+            if (pet.getId().equals(petId)) {
                 PetList.set(count, newPet);
             }
             count++;
@@ -36,7 +36,7 @@ public class PetService {
     }
 
     public void deletePet(Integer petId) {
-        PetList.removeIf(pet -> pet.getid().equals(petId));
+        PetList.removeIf(pet -> pet.getId().equals(petId));
     }
 
 }
